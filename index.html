@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Horizon ONE Community</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Horizon ONE Community" />
+  <meta name="description" content="Collaborate on high-performance C++20 engine architecture, Scorpio AI agent integrations, and shader development." />
+
+  <!-- Open Graph / Discord Embed Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://horizon1.us/discord" />
+  <meta property="og:title" content="Horizon ONE Community — Official Discord" />
+  <meta property="og:description" content="Join the developer network building next-gen AI-native game engine pipelines. Low-latency inference, Vulkan/DirectX runtimes, and open dev builds." />
+  <meta property="og:image" content="https://horizon1.us/horizon.png" />
+  <meta property="og:site_name" content="Horizon Neural Technologies" />
+  <meta name="theme-color" content="#38bdf8" />
+
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Horizon ONE Community — Official Discord" />
+  <meta name="twitter:description" content="Join the developer network building next-gen AI-native game engine pipelines." />
+  <meta name="twitter:image" content="https://horizon1.us/horizon.png" />
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-dark: #08090d;
+      --bg-surface: #0e1117;
+      --bg-surface-elevated: #141822;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(56, 189, 248, 0.35);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-cyan: #38bdf8;
+      --accent-cyan-glow: rgba(56, 189, 248, 0.25);
+      --accent-blue: #3b82f6;
+      --accent-emerald: #10b981;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 50% 10%, #172554 0%, #08090d 60%, #08090d 100%);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      overflow-x: hidden;
+    }
+
+    .lander-card {
+      position: relative;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 2.75rem 2.25rem;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .card-glow {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .avatar-pulse {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.2);
+      animation: pulse 2.5s infinite;
+      z-index: 1;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.2; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    .avatar-box {
+      position: relative;
+      z-index: 2;
+      width: 88px;
+      height: 88px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 24px var(--accent-cyan-glow);
+      overflow: hidden;
+    }
+
+    .avatar-box img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    p.tagline {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .stats-panel {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 0.85rem 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-val {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 24px;
+      background: var(--border-subtle);
+    }
+
+    .btn-join {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+      color: #04101e;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-cyan-glow);
+    }
+
+    .btn-join:hover {
+      background: linear-gradient(180deg, #7dd3fc 0%, #0369a1 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-join svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .redirect-notice {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+    }
+
+    .redirect-notice span {
+      color: var(--accent-cyan);
+    }
+
+    .cancel-btn {
+      color: var(--text-muted);
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+
+    .cancel-btn:hover {
+      color: var(--text-secondary);
+    }
+
+    .footer-link {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lander-card">
+    <div class="card-glow"></div>
+
+    <div class="avatar-wrapper">
+      <div class="avatar-pulse"></div>
+      <div class="avatar-box">
+        <img src="/horizon.png" alt="Horizon ONE" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23000\'><path d=\'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\'/></svg>'">
+      </div>
+    </div>
+
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      Official Developer Hub
+    </div>
+
+    <h1>Horizon ONE</h1>
+    <p class="tagline">The community driving AI-native engine architecture, Scorpio autonomous pipelines, and C++20 core systems.</p>
+
+    <div class="stats-panel">
+      <div class="stat-col">
+        <span class="stat-val">Active</span>
+        <span class="stat-label">Server Status</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-col">
+        <span class="stat-val">v0.8</span>
+        <span class="stat-label">Core Target</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-col">
+        <span class="stat-val">C++ / HLSL</span>
+        <span class="stat-label">Focus</span>
+      </div>
+    </div>
+
+    <!-- Replace # with your real invite link (e.g., https://discord.gg/ABC123XYZ) -->
+    <a href="https://discord.gg/YOUR_INVITE_CODE" id="join-btn" class="btn-join">
+      <svg viewBox="0 0 24 24">
+        <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+      </svg>
+      Join Discord Server
+    </a>
+
+    <div class="redirect-notice" id="redirect-box">
+      Redirecting in <span id="counter">3</span>s...
+      <span class="cancel-btn" id="cancel-link">Cancel</span>
+    </div>
+  </div>
+
+  <a href="https://horizon1.us" class="footer-link">
+    &larr; Back to horizon1.us
+  </a>
+
+  <script>
+    // Configuration
+    const DISCORD_INVITE_URL = "https://discord.gg/YOUR_INVITE_CODE"; // <-- Replace with your Discord code
+    let secondsLeft = 3;
+    let timer = null;
+
+    const counterEl = document.getElementById("counter");
+    const cancelLink = document.getElementById("cancel-link");
+    const redirectBox = document.getElementById("redirect-box");
+    const joinBtn = document.getElementById("join-btn");
+
+    // Assign link dynamically
+    joinBtn.href = DISCORD_INVITE_URL;
+
+    // Countdown and automatic bounce
+    timer = setInterval(() => {
+      secondsLeft -= 1;
+      if (secondsLeft > 0) {
+        counterEl.textContent = secondsLeft;
+      } else {
+        clearInterval(timer);
+        window.location.href = DISCORD_INVITE_URL;
+      }
+    }, 1000);
+
+    // Cancel automatic redirection if requested
+    cancelLink.addEventListener("click", () => {
+      clearInterval(timer);
+      redirectBox.textContent = "Automatic redirect cancelled.";
+    });
+  </script>
+</body>
+</html>
